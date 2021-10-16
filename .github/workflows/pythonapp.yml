@@ -24,5 +24,5 @@ jobs:
       run: |
         cd ./python
         docker login --username=and1foster --password=${{ secrets.DOCKERPW }}
-        docker image build -t and1foster/gitops:hellov1.4 .
+        docker image build -t and1foster/gitops:hellov1.0 .
         docker push and1foster/gitops:hellov1.0
